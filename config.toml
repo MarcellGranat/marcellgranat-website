@@ -1,4 +1,4 @@
-baseURL = "https://main--dapper-stroopwafel-3a2dcb.netlify.app"
+baseURL = "www.marcellgranat.com/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Marcell Granat"
