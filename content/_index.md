@@ -1,7 +1,7 @@
 ---
 title: "Marcell Granat"
 subtitle: "Education & Research Expert"
-description: "..."
+description: "Small change"
 images:
   - img/myself-drawn.png
 image_left: true
