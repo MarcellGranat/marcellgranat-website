@@ -8,7 +8,7 @@ show_intro: true
 show_outro: false
 intro: |
 
-  I am an education and research expert at Central Bank of Hungary.
+  I am an economic analyst, researcher at Central Bank of Hungary and assistant lecturer at John von Neumann University. I love inferential statistics, econometrics and ML solutions. Beside my studies in economics MSc I teached this subjects at Corvinus University of Budapest, now I proceed this at Neumann as an assistant lecturer, while I am also doing my PhD studies at Eötvös Loránd University. My research topic is the relationship between asset pricing and inflation (expectations).
 
 ---
 

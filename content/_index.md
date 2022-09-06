@@ -1,7 +1,7 @@
 ---
 title: "Marcell Granat"
 subtitle: "Education & Research Expert"
-description: "Small change"
+description: "I am an economic analyst, researcher and assistant lecturer at John von Neumann University. I love inferential statistics, econometrics and ML solutions. This website is maintained to share lecture slides, materials ([Big Data](https://www.marcellgranat.com/big_data/)) and [blog](https://www.marcellgranat.com/blog/) posts about my actual research activities"
 images:
   - img/myself-drawn.png
 image_left: true
