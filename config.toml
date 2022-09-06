@@ -1,4 +1,4 @@
-baseURL = "www.marcellgranat.com/"
+baseURL = "https://marcellgranat.com/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Marcell Granat"
