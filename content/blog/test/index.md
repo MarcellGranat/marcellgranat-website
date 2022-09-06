@@ -15,8 +15,6 @@ summary: "Summary text"
 
 Some test...
 
-``` r
-print("testing R code")
-```
+{{% youtube "ETKlsxuFk7g" %}}
 
-    [1] "testing R code"
+</br>

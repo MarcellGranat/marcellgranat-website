@@ -24,6 +24,8 @@ theme_set(theme_minimal())
 Some test...
 
 ```{r}
-print("testing R code")
+#| echo: false
+blogdown::shortcode("youtube", "ETKlsxuFk7g")
 ```
 
+</br>
