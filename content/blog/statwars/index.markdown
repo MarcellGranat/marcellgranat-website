@@ -1,10 +1,10 @@
 ---
 title: "STAT WARS"
 author: Marcell Granat
-date: '2022-08-04'
+date: '2022-01-27'
 format: hugo
 slug: statwars
-summary: 'With my friend Bálint, we successfully won the 2021 "STAT WARS", due to which we were also featured on a morning TV show and in newspapers'
+summary: 'With my friend Bálint, we successfully won the 2021 "STAT WARS", due to which we were also featured in a morning TV show and in newspapers'
 ---
 
 
