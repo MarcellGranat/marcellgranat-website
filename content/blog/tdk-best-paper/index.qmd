@@ -4,7 +4,7 @@ author: Marcell Granat
 date: '2022-03-18'
 format: hugo
 slug: tdk-best-paper
-summary: 'An interview was conducted with me and my co-author on the topic of the benefits of joint publishing after we won the Corvinus University Best Paper award'
+summary: 'An interview was conducted with me and my co-author on the topic of the benefits of publishing together after we won the Best Paper Award at Corvinus University of Budapest'
 ---
 
 Original interview (Hungarian) available [here](https://www.uni-corvinus.hu/post/hir/tdk-sztorik-ezert-jo-egyutt-tdk-dolgozatot-irni/?fbclid=IwAR32PKutLhBnnaxfYzvxstS6uwvmo64WjOTbX26o6kuy11tFCe9kHCHAAjg)
