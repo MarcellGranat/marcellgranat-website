@@ -8,7 +8,11 @@ show_intro: true
 show_outro: false
 intro: |
 
-  1.  [Syllabus](https://marcellgranat.github.io/big_data2022/Syllabus.html#1)
+  1.  [Course outline](https://marcellgranat.github.io/big_data2022/course-outline.html#1)
+  
+  2.  [Introduction to Statistics](https://marcellgranat.github.io/big_data2022/introduction-to-statistics.html#1)
+  
+  
 
 ---
 
