@@ -12,6 +12,8 @@ intro: |
   
   2.  [Introduction to Statistics](https://marcellgranat.github.io/big_data2022/introduction-to-statistics.html#1)
   
+  3.  [Introduction to R](https://marcellgranat.github.io/big_data2022/introduction-to-r.html#1)
+  
   
 
 ---
