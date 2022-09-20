@@ -14,6 +14,10 @@ intro: |
   
   3.  [Introduction to R](https://marcellgranat.github.io/big_data2022/introduction-to-r.html#1)
   
+  4. [Correlation](https://marcellgranat.github.io/big_data2022/correlation.html)
+  
+  5. [Tidyverse](https://marcellgranat.github.io/big_data2022/tidyverse.html)
+  
   
 
 ---
