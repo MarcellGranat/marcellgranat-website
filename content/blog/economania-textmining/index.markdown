@@ -1,22 +1,22 @@
 ---
-title: "STAT WARS"
+title: "Quantify the Economania Blog"
 author: Marcell Granat
-date: '2022-01-27'
+date: '2022-09-27'
 format: hugo
-slug: statwars
-summary: 'With my friend Bálint, we successfully won the 2021 "STAT WARS", due to which we were also featured in a morning TV show and in newspapers'
+slug: economania-textming
+tags:
+  - Economania
+  - Text analysis
+summary: 'The MNB Institute organized the opening event of the Economania professional workshop, and I also had the opportunity to present the results of text analysis on the blog posts.'
 ---
 
 
 
-In 2021, the Central Statistical Office announced its data analysis competition for MSc students. Since my friend Balint Mazzag and I successfully won this, we had the opportunity to talk about our experiences and the importance of statistical knowledge in the Hungarian TV2 television channel's morning show. Also thanks to this, we gave an interview to [Figyelő](https://digitalstand.hu/olvaso/129772#1).
+<iframe src="https://marcellgranat.github.io/economania-textmining" width="768" height="550px" data-external="1">
+</iframe>
 
-{{% youtube "ETKlsxuFk7g" %}}
+The MNB Institute organized the opening event of the Economania professional workshop, where the participants heard an exclusive presentation about monetary policy and we talked with them about their experience and suggestions related to the Economania Blog.
 
-</br>
+My presentation was about the analysis of blog posts, based on TF-IDF indicators. TF-IDF is the frequency of the term (word) adjusted for how rarely it appears in the collection of documents (aggregated to years and authors in this case). This decreases the weight of the commonly used words and highlights the terms related only to that specific year or author.
 
-Source: [TV2](https://tv2play.hu/mokka/oriasi_verseny_es_kihivas_ok_a_statisztika_bajnokai)
-
-<img src="index_files/figure-html/1643274156567.jpeg" width="553" />
-
-Source: [Linkein](https://www.linkedin.com/posts/corvinus-university-of-budapest_ksh-corvinus-activity-6892391371714760704-d4hH?utm_source=share&utm_medium=member_desktop)
+To carry out the analysis, I collected the individual blog posts myself using the web scraping method and cleaned the data, the code is available at the following link: <https://github.com/MarcellGranat/economania-textmining/blob/main/scrape.R>
