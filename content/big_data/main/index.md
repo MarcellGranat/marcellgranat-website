@@ -21,6 +21,8 @@ intro: |
   6. [Tidyverse II](https://marcellgranat.github.io/big_data2022/tidyverse2.html)
 
   7. [Statistical inference I](https://marcellgranat.github.io/big_data2022/inferential-statistics.html)
+  
+  8. [Statistical inference II](https://marcellgranat.github.io/big_data2022/inferential-statistics2.html)
 
 ---
 
