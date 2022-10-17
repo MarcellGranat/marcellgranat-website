@@ -25,6 +25,8 @@ intro: |
   8. [Statistical inference II](https://marcellgranat.github.io/big_data2022/inferential-statistics2.html)
   
   8. [Econometrics I](https://marcellgranat.github.io/big_data2022/econometrics1.html)
+  
+  9. [Econometrics II](https://marcellgranat.github.io/big_data2022/econometrics2.html)
 
 ---
 
