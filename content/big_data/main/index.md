@@ -29,6 +29,8 @@ intro: |
   10. [Econometrics II](https://marcellgranat.github.io/big_data2022/econometrics2.html)
   
   11. [Econometrics III](https://marcellgranat.github.io/big_data2022/econometrics3.html)
+  
+  13. [Grammar of Graphics II](https://marcellgranat.github.io/big_data2022/gramar_of_graphics2.html)
 
 ---
 
