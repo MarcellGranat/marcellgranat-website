@@ -113,7 +113,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "conversation" # icon name without the 'fa-'
       icon_pack = "ai"
-      url       = "mailto:granatcellmar98@gmail.com"
+      url       = "mailto:granat.marcell@uni-neumann.hu"
 #  [[params.social]]
 #      icon      = "google-scholar" # icon name without the 'fa-'
 #      icon_pack = "ai"
