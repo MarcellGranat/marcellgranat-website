@@ -19,5 +19,5 @@ I had the honor of being invited to present one our current research at the "Dat
 
 The enclosed slideshow helps you understand the intuition behind the models and why each methodological step is justified.
 
-<iframe src="https://marcellgranat.github.io/used-car-liquidity/analysis-in-practice.html" width="768" height="550px" data-external="1">
+<iframe src="https://marcellgranat.github.io/used-car-liquidity/analysis-in-practice.html" width="100%" height="550px" data-external="1">
 </iframe>
