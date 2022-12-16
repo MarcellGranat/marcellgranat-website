@@ -12,8 +12,31 @@ summary: 'The MNB Institute organized the opening event of the Economania profes
 
 
 
-<iframe src="https://marcellgranat.github.io/economania-textmining" width="768" height="550px" data-external="1">
-</iframe>
+<style type="text/css">
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 64.28%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
+
+<div class="container">
+
+<iframe class="responsive-iframe" src="https://marcellgranat.github.io/economania-textmining"></iframe>
+
+</div>
 
 The MNB Institute organized the opening event of the Economania professional workshop, where the participants heard an exclusive presentation about monetary policy and we talked with them about their experience and suggestions related to the Economania Blog.
 

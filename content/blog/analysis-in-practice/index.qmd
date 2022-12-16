@@ -18,7 +18,7 @@ I had the honor of being invited to present one our current research at the "Dat
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 64.28%; /* 16:9 Aspect Ratio */
 }
 
 .responsive-iframe {
