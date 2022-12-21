@@ -46,5 +46,5 @@ The article is accessible in [English](https://en-hitelintezetiszemle.mnb.hu/let
 We also presented our research at the *13th Annual Financial Market Liquidity Conference Budapest*. The slideshow can be seen below.
 
 <div class="container"> 
-  <iframe class="responsive-iframe" src="index_files/Green_finance_beamer.pdf"></iframe>
+  <iframe class="responsive-iframe" src="https://raw.githubusercontent.com/MarcellGranat/marcellgranat-website/main/content/blog/media-esg/index_files/Green_finance_beamer_watermark-3.pdf"></iframe>
 </div>
