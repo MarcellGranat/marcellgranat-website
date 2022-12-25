@@ -1,10 +1,12 @@
 ---
 ## Configure header of page
-text_align_right: false
+text_align_right: true
 show_title_as_headline: false
 headline: |
-  Hi, my name is Marcell Granat. Nice to meet you.
 ---
 
-<!-- this is a subheadline -->
-I am a data scientist and software engineer at RStudio where I work on [open source modeling tools](https://www.tidymodels.org/). My last name is pronounced SILL-GHEE (two syllables, short `i`, hard `g`). I love making beautiful charts, the statistical programming language R, Jane Austen, black coffee, and red wine.
+<i class="fas fa-graduation-cap pr2"></i>PhD in Economics  &#8729;
+ Eötvös Loránd University  &#8729;  Expected 2026
+
+<i class="fas fa-graduation-cap pr2"></i>MSc in Economic Analysis  &#8729;
+    Corvinus University of Budapest  &#8729;  2022
