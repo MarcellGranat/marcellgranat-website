@@ -7,6 +7,11 @@ slug: portfolio-used-cars
 tags: 
   - used cars
 summary: 'Buying a car is a major item in the household consumption basket, so participants in this market make their decisions based on carefully considered arguments. We build a survival model based on a large dataset of used car ads, revealing what makes a used car liquid (easy to sell).'
+links:
+- icon: book
+  icon_pack: fas
+  name: slide
+  url: https://marcellgranat.github.io/used-car-liquidity/analysis-in-practice.html
 ---
 
 

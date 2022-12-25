@@ -10,6 +10,15 @@ tags:
   - NLP
   - Topic model
 summary: 'Our recent article in the *Financial and Economic Review* investigates the relationship between the future return of ESG investment and the news in the media.'
+links:
+- icon: book
+  icon_pack: fas
+  name: English
+  url: https://en-hitelintezetiszemle.mnb.hu/letoltes/fer-21-4-st5-csillag-granat-neszveda.pdf
+- icon: book
+  icon_pack: fas
+  name: Hungarian
+  url: https://hitelintezetiszemle.mnb.hu/letoltes/hsz-21-4-t5-csillag-granat-neszveda.pdf
 ---
 
 

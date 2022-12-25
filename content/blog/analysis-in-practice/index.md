@@ -9,6 +9,11 @@ tags:
   - ML
   - MCA
 summary: 'I had the honor of being invited to present one our current research at the "Data Analysis in Practice" series.'
+links:
+- icon: presentation-screen
+  icon_pack: fas
+  name: Slide
+  url: https://marcellgranat.github.io/used-car-liquidity/analysis-in-practice.html
 ---
 
 

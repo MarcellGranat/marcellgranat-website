@@ -7,6 +7,11 @@ slug: portfolio-used-cars
 tags:
   - used cars
 summary: 'Buying a car is a major item in the household consumption basket, so participants in this market make their decisions based on carefully considered arguments. We build a survival model based on a large dataset of used car ads, revealing what makes a used car liquid (easy to sell).'
+links:
+- icon: link
+  icon_pack: fas
+  name: article
+  url: https://www.portfolio.hu/gazdasag/20221029/mennyi-ido-eladni-egy-hasznalt-autot-575549
 ---
 
 
