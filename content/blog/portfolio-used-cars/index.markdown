@@ -22,7 +22,7 @@ A car is one of the most expensive consumer goods in the life of an average hous
 
 It may be obvious that the price of a car are determined by comparing it with the price of other cars available on the market, but when buying, it is worth thinking about how easy it will be to find a buyer for it when we replace it.
 
-Granát Marcell, teaching assistant at Neumann János University, and Dr. Péter Vékás, associate professor at Budapest Corvinus University, investigated what determines the market value of a car and the time required to sell it, based on the database of advertisements appearing on the most trafficked website in Hungary. The authors examine the market based on the most modern machine learning and statistical methodology.
+Granát Marcell, teaching assistant at Neumann János University, and Dr. Péter Vékás, associate professor at Budapest Corvinus University, investigated what determines the market value of a car and the time required to sell it, based on the database of advertisements appearing on the most trafficked website in Hungary. The authors examine the market based on the most modern machine learning and statistical methodology.
 
 ## The theoretical consideration
 
@@ -34,7 +34,7 @@ Price of a car depends on many details: mileage, year of manufacture, engine per
 
 ## The liquidity of cars
 
-Later, when we want to sell our purchased car, we have to consider how liquid our vehicle is, i.e. in how much time and at what loss we are willing to part with it. The authors apply a so-called survival model, in which the sale time is estimated based on the degree of underpricing and overpricing and the characteristics of the car.
+Later, when we want to sell our purchased car, we have to consider how liquid our vehicle is, i.e. in how much time and at what loss we are willing to part with it. The authors apply a so-called survival model, in which the sale time is estimated based on the degree of underpricing and overpricing and the characteristics of the car.
 
 The results can easily be illustrated with median selling time. This is 14 days for all the cars listed on the website, which means that, on average, half of the used cars on the market are sold in this time.
 

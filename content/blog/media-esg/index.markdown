@@ -1,10 +1,10 @@
 ---
 title: "Media Attention to Environmental Issues and ESG Investing"
 author: Balazs Csillag, Marcell Granat, Gabor Neszveda
-date: '2022-12-15'
+date: '2022-12-22'
 format: hugo
 slug: media-esg
-tags:
+tags: 
   - ESG
   - ML
   - NLP
