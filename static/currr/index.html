@@ -52,22 +52,21 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://marcellgranat.com" alt="Marcell Granat blog" class="external-link" onMouseOver="opacity: 0.3">
-    <img src="icon.png" alt="Marcell Granat blog" style="width: 20px; margin-left: -10px"/>
-  </a>
+<a href="https://marcellgranat.com" alt="Marcell Granat blog" class="external-link">
+<img src="icon.png" alt="Marcell Granat blog" style="width: 20px; margin-left: -10px"/>
+</a>
 </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="https://github.com/MarcellGranat/currr/" class="external-link">
-            <span class="fab fa-github fa-lg"></span>
-          </a>
-        </li>
-              </ul>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="https://github.com/MarcellGranat/currr/" class="external-link">
+<span class="fab fa-github fa-lg"></span>
+</a>
+</li>
+</ul>
 </div>
 <!--/.nav-collapse -->
-  </div>
+</div>
 <!--/.container -->
 </div>
 <!--/.navbar -->
@@ -77,7 +76,7 @@
       </header><div class="row">
   <div class="contents col-md-9">
 <div class="section level1">
-<div class="page-header"><h1 id="currr-">currr <img src="logo.png" align="right" width="200px"><a class="anchor" aria-label="anchor" href="#currr-"></a>
+<div class="page-header"><h1 id="currr-">currr <img src="https://raw.githubusercontent.com/MarcellGranat/marcellgranat-website/main/static/currr/logo.png" align="right" width="120px"><a class="anchor" aria-label="anchor" href="#currr-"></a>
 </h1></div>
 <!-- badges: start -->
 
@@ -87,9 +86,9 @@
 <blockquote>
 <p>A long journey is best broken into small steps, and the importance of taking a rest must never be underestimate.</p>
 </blockquote>
-<p>The <strong>currr</strong> package is a wrapper for the <code><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">purrr::map()</a></code> family, but extends the iteration process with certain number of <strong>checkpoints</strong> (<code>currr</code> = <code>c</code>heckpoints + <code>purrr</code>), where the evaluated results are saved, and we can always restart from there.</p>
-<p><img src="example.gif" align="center"></p>
-<p>Implementations of the family of map() functions with frequent saving of the intermediate results. The contained functions let you <strong>start</strong> the evaluation of the iterations <strong>where you stopped</strong> (reading the already evaluated ones from cache), and <strong>work with the currently evaluated iterations</strong> while remaining ones are running in a background job. <strong>Parallel</strong> computing is also easier with the workers parameter.</p>
+<p>The <strong>currr</strong> package is a wrapper for the <code><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">purrr::map()</a></code> family but extends the iteration process with a certain number of <strong>checkpoints</strong> (<code>currr</code> = <code>c</code>heckpoints + <code>purrr</code>), where the evaluated results are saved, and we can always restart from there.</p>
+<p><img src="https://raw.githubusercontent.com/MarcellGranat/marcellgranat-website/main/static/currr/example.gif" align="center"></p>
+<p>Implementations of the family of map() functions with a frequent saving of the intermediate results. The contained functions let you <strong>start</strong> the evaluation of the iterations <strong>where you stopped</strong> (reading the already evaluated ones from the cache), and <strong>work with the currently evaluated iterations</strong> while the remaining ones are running in a background job. <strong>Parallel</strong> computing is also easier with the <code>workers</code> parameter.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -103,34 +102,29 @@
 <p>The following example uses <code>currr</code> to present an everyday issue: run a time-demanding iteration, but you want to rerun it again.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──</span></span>
-<span><span class="co">#&gt; ✔ ggplot2 3.4.0     ✔ purrr   1.0.1</span></span>
-<span><span class="co">#&gt; ✔ tibble  3.1.8     ✔ dplyr   1.1.0</span></span>
-<span><span class="co">#&gt; ✔ tidyr   1.3.0     ✔ stringr 1.5.0</span></span>
-<span><span class="co">#&gt; ✔ readr   2.1.3     ✔ forcats 1.0.0</span></span>
-<span><span class="co">#&gt; ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──</span></span>
-<span><span class="co">#&gt; ✖ dplyr::filter() masks stats::filter()</span></span>
-<span><span class="co">#&gt; ✖ dplyr::lag()    masks stats::lag()</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/MarcellGranat/currr" class="external-link">currr</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>currr.folder <span class="op">=</span> <span class="st">".currr"</span>, currr.wait <span class="op">=</span> <span class="cn">Inf</span><span class="op">)</span></span>
-<span><span class="co"># folder in your wd, where to save</span></span>
+<span><span class="co"># folder in your wd, where to save cache data</span></span>
 <span></span>
 <span><span class="va">avg_n</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">.data</span>, <span class="va">.col</span>, <span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">.1</span><span class="op">)</span></span>
+<span>  <span class="co"># meaningless function that takes about 1 sec</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
 <span>  </span>
 <span>  <span class="va">.data</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html" class="external-link">pull</a></span><span class="op">(</span><span class="op">{</span><span class="op">{</span> <span class="va">.col</span> <span class="op">}</span><span class="op">}</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="op">(</span>\<span class="op">(</span><span class="va">m</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">m</span><span class="op">)</span> <span class="op">*</span> <span class="va">x</span><span class="op">)</span> <span class="op">(</span><span class="op">)</span></span>
-<span><span class="op">}</span></span>
-<span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span>msg <span class="op">=</span> <span class="st">"First evaluation"</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
+<div class="section level3">
+<h3 id="checkpoints">Checkpoints<a class="anchor" aria-label="anchor" href="#checkpoints"></a>
+</h3>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span>msg <span class="op">=</span> <span class="st">"First evaluation"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/cp_map.html">cp_map</a></span><span class="op">(</span>.x <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, .f <span class="op">=</span> <span class="va">avg_n</span>, .data <span class="op">=</span> <span class="va">iris</span>, </span>
 <span>       .col <span class="op">=</span> <span class="va">Sepal.Length</span>, </span>
 <span>       name <span class="op">=</span> <span class="st">"iris_mean"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span></span>
-<span><span class="co">#&gt; ✓ Everything is unchanged. Reading cache.</span></span>
 <span><span class="co">#&gt; [[1]]</span></span>
 <span><span class="co">#&gt; [1] 5.843333</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -140,8 +134,8 @@
 <span><span class="co">#&gt; [[3]]</span></span>
 <span><span class="co">#&gt; [1] 17.53</span></span>
 <span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; First evaluation: 0.499 sec elapsed</span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># ~ 1:50 =&gt; 50 x 1 sec</span></span>
+<span><span class="co">#&gt; First evaluation: 50.351 sec elapsed</span></span>
 <span></span>
 <span></span>
 <span></span>
@@ -161,10 +155,10 @@
 <span><span class="co">#&gt; [[3]]</span></span>
 <span><span class="co">#&gt; [1] 17.53</span></span>
 <span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Second evaluation: 0.429 sec elapsed</span></span></code></pre></div>
-<p>If the <code>.x</code> input and <code>.f</code> are the same, then the 2nd time you call the function, it reads the outcome from the specified folder (<code>.currr</code>). Also if <code>.x</code> changes, but some of its part remain the same, then that part are taken from the previously saved results, and only the new elements of <code>.x</code> are called for evaluations. (If <code>.f</code> changes, then the process will start from zero.)</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># ~ 0 sec</span></span>
+<span><span class="co">#&gt; Second evaluation: 0.034 sec elapsed</span></span></code></pre></div>
+<p>If the <code>.x</code> input and <code>.f</code> are the same, then the 2nd time you call the function, it reads the outcome from the specified folder (<code>.currr</code>). Also if <code>.x</code> changes, but some of its part remain the same, then that part is taken from the previously saved results, and only the new elements of <code>.x</code> are called for evaluation. (If <code>.f</code> changes, then the process will start from zero.)</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span>msg <span class="op">=</span> <span class="st">"Partly modification"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/cp_map.html">cp_map</a></span><span class="op">(</span>.x <span class="op">=</span> <span class="fl">20</span><span class="op">:</span><span class="fl">60</span>, .f <span class="op">=</span> <span class="va">avg_n</span>, .data <span class="op">=</span> <span class="va">iris</span>, </span>
@@ -182,8 +176,50 @@
 <span><span class="co">#&gt; [[3]]</span></span>
 <span><span class="co">#&gt; [1] 128.5533</span></span>
 <span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Partly modification: 1.631 sec elapsed</span></span></code></pre></div>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># ~ 50:60 =&gt; 10 x 1 sec</span></span>
+<span><span class="co">#&gt; Partly modification: 10.378 sec elapsed</span></span></code></pre></div>
+<p>You can remove the cache files, if you want to reset the process (or remove the already unnecessary files from your folder).</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># only cache files for iris_mean</span></span>
+<span><span class="fu"><a href="reference/remove_currr_cache.html">remove_currr_cache</a></span><span class="op">(</span><span class="st">"iris_mean"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># all cache files</span></span>
+<span><span class="fu"><a href="reference/remove_currr_cache.html">remove_currr_cache</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="parallel-process">Parallel process<a class="anchor" aria-label="anchor" href="#parallel-process"></a>
+</h3>
+<p>You can also use multicore process (built on the <code>parallel</code> package). After evaluation, the computation will automatically reset to sequential.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>currr.workers <span class="op">=</span> <span class="fl">5</span><span class="op">)</span> <span class="co"># &lt;</span></span>
+<span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span>msg <span class="op">=</span> <span class="st">"Parallel computation"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/cp_map.html">cp_map</a></span><span class="op">(</span>.x <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, .f <span class="op">=</span> <span class="va">avg_n</span>, .data <span class="op">=</span> <span class="va">iris</span>, </span>
+<span>       .col <span class="op">=</span> <span class="va">Sepal.Length</span>, </span>
+<span>       name <span class="op">=</span> <span class="st">"iris_mean"</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [[1]]</span></span>
+<span><span class="co">#&gt; [1] 5.843333</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; [[2]]</span></span>
+<span><span class="co">#&gt; [1] 11.68667</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; [[3]]</span></span>
+<span><span class="co">#&gt; [1] 17.53</span></span>
+<span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># ~ 50 / 5 =&gt; 10 sec</span></span>
+<span><span class="co">#&gt; Parallel computation: 21.159 sec elapsed</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="background-process">Background process<a class="anchor" aria-label="anchor" href="#background-process"></a>
+</h3>
+<p>This is another functionality that makes <code>currr</code> to be cool. Working in RStudio you can set the <code>wait</code> parameter to 0-1/1+, define how many iterations you want to wait, and then let R work on the remaining iterations in the background, while you can work with the evaluated ones. If wait &lt; 1, then it is interpreted as what proportion of the iterations you want to wait. Whenever you recall the function, it will return the already evaluated ones (use the <code>fill</code> parameter to specify whether you want to get <code>NULL</code>s to the pending ones.)</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>currr.wait <span class="op">=</span> <span class="fl">20</span>, currr.fill <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<p><img src="https://raw.githubusercontent.com/MarcellGranat/marcellgranat-website/main/static/currr/example2.gif" align="center"></p>
+<p>In the example above, you get your results, when 20 iterations are evaluated, but the job in the background keeps running.</p>
+</div>
 </div>
 </div>
   </div>
