@@ -29,3 +29,5 @@ vignettes/*.pdf
 .DS_Store
 # R Environment Variables
 .Renviron
+
+/.quarto/

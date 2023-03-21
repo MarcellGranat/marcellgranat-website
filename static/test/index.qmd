@@ -1,0 +1,49 @@
+---
+title: "test"
+subtitle: "Did the ?"
+author: "Marcell Granat"
+date: "10 November, 2022"
+format:
+  revealjs: 
+    footer: MG
+    theme: [simple, custom.scss]
+    width: 1280
+    height: 720 
+    title-slide-attributes: 
+      data-background-opacity: "0.3"
+knitr:
+  opts_chunk: 
+    echo: false
+    collapse: true
+    comment: "#>"
+    cache: true
+    fig.height: 6
+    out.height: "600px"
+    fig.align: "center"
+
+editor_options: 
+  chunk_output_type: console
+---
+
+# Motivation
+
+```{r}
+library(tidyverse)
+```
+
+::: incremental
+
+- yes
+
+- almost
+
+- this time: very close
+
+:::
+
+# 
+
+<section data-background-iframe="ttt.html"
+          data-background-interactive>
+  <h2></h2>
+</section>
